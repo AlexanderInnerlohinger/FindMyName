@@ -2,10 +2,14 @@ namespace ___Skribbl_Console___;
 
 public class RectangleCommand
 {
-    public enum RectangleFillingOptions
+    public enum FillingOptions
     {
-        Fill,
-        HoneyComb
+        None,
+        FillX,
+        FillY,
+        Grid,
+        HoneyComb,
+        DashedLine
     }
 
     public CartesianCoordinate Start { get; set; }
@@ -22,5 +26,5 @@ public class RectangleCommand
     
     public double Pitch { get; set; }
 
-    public RectangleFillingOptions FillingOption { get; set; }
+    public FillingOptions FillingOption { get; set; }
 }

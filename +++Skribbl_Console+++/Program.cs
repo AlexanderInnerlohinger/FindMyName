@@ -1,36 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
-namespace ___Skribbl_Console___
+public class Example
 {
-    internal class Program
+    static int m_id;
+
+    static void Main()
     {
-        private static Dictionary<double, string> m_DictMeasuredValues;
+        List<List<object>> objectList = new List<List<object>>();
 
-
-        static void Main(string[] args)
+        for (int i = 0; i < 10; i++)
         {
-            List<string> newList = new List<string>();
-
-            for (int i = 0; i < 10; i++)
-            {
-                newList.Add($"item {i}");
-            }
-
-            List<string> preList = new List<string>();
-            preList.Add("First item");
-
-            List<string> postList = new List<string>();
-            postList.Add("Last item");
-            
-            newList.RemoveRange(newList.Count-2, 2);
-            
-            newList.InsertRange(0, preList);
-            newList.InsertRange(newList.Count, postList);
-            
-            Console.Read();
+            objectList.Add(new List<object>());
         }
-    }
 
+
+
+
+
+
+
+
+        Console.Read();
+    }
 }
